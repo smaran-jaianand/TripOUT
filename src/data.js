@@ -28,9 +28,9 @@ export const VENDORS = [
     id: 1,
     name: "The Conservatory Gardens",
     description:
-      "An exquisite glasshouse surrounded by botanical gardens. Offers a serene, light-filled atmosphere perfect for elegant afternoon ceremonies and starlit evening receptions.",
+      "An exquisite garden venue surrounded by lush landscaping. Offers a serene, light-filled atmosphere perfect for elegant afternoon ceremonies and starlit evening receptions.",
     rating: 4.9,
-    priceRange: "$$$$",
+    priceRange: "₹15,00,000+",
     category: "Premium Venue",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuCBT8VGXEqu0QT1Pt-Q0VRsCuIV3Bs4sM1xjKd0BHNnVx_A0wPdBNzaZkL-U93Azl7NE5g8YtNTj_nEN5jEzSl6dEeO1_i-RCnFFamiIrmFZBDtSxMIwZeLrnhvHKNg7qen9LzZV71eNUwI-M0ybTvYyaI6T0wMX3OqNj9jn9mXIB4ff_xC5jtgRH901CYXvn2UcqcfsU3OnFmakewhDldkXnGySQ_tj0ElbZ5y7DLL00VQLBA-iXh8EUDg1hwN60PKdFlQVYuE3To",
@@ -40,9 +40,9 @@ export const VENDORS = [
     id: 2,
     name: "Artisan Hearth",
     description:
-      "Farm-to-table culinary experiences focusing on seasonal, locally sourced ingredients with elegant plating.",
+      "Farm-to-table culinary experiences focusing on seasonal, locally sourced Indian ingredients with elegant plating.",
     rating: 4.8,
-    priceRange: "$$$",
+    priceRange: "₹8,00,000 - ₹12,00,000",
     category: "Catering",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuCZ8-0nV7uouzOKB71SXm_dX4sZcKkRUnflteBF4-040ODiFEK5sDBUZTnAy0qk8z0_v1JTLIczNcngCeCPO4x7CoZ5apPgV0bMk2DxvbmrMqwrZday7P71gIKoe_dfXLpg0uS-Fk15Rb5qtH19WoneoKxcJcq35TWRu0eq-ox_JNPU9Qgvw7Vk6PTTFTfdh-8-hXRR2jFCSPTn84OO3wCnvohPSwM3bBJyiYkFfkNMfMnN0dL80LQn_tF6UFIJk86PSQ7w3ps62TQ",
@@ -55,25 +55,25 @@ export const QUOTES = [
     id: 1,
     vendor: "Botanica Floral Design",
     category: "Florist",
-    location: "San Francisco",
+    location: "Mumbai",
     status: "Quote Received",
-    price: 3850,
+    price: 85000,
     inclusions: ["Centerpieces", "Archway", "Setup"],
   },
   {
     id: 2,
     vendor: "Lumina Catering Co.",
     category: "Catering",
-    location: "Bay Area",
+    location: "Bangalore",
     status: "Pending Review",
-    price: 12400,
+    price: 275000,
     inclusions: ["3-Course Meal", "Staffing", "Bar Service"],
   },
   {
     id: 3,
     vendor: "Echo Sound & Lighting",
     category: "A/V Production",
-    location: "Oakland",
+    location: "Delhi",
     status: "Awaiting Response",
     price: null,
     inclusions: [],
@@ -82,18 +82,18 @@ export const QUOTES = [
     id: 4,
     vendor: "The Grand Estate",
     category: "Venue",
-    location: "Napa Valley",
+    location: "Pune",
     status: "Quote Received",
-    price: 18000,
+    price: 400000,
     inclusions: ["Full Access", "Furniture", "Valet"],
   },
 ];
 
 export const METRICS = [
-  { label: "Avg. Quote Value",  value: "$4,250", icon: "payments",        trend: "12% vs last month",  direction: "down" },
-  { label: "Response Rate",     value: "78%",    icon: "forum",           trend: "4% vs last month",   direction: "up" },
-  { label: "Active Vendors",    value: "14",     icon: "store",           trend: "Currently in review", direction: null },
-  { label: "Pending Responses", value: "3",      icon: "hourglass_empty", trend: "Requires follow-up", direction: null, highlight: true },
+  { label: "Avg. Quote Value",  value: "₹2,12,500", icon: "payments",        trend: "12% vs last month",  direction: "down" },
+  { label: "Response Rate",     value: "78%",        icon: "forum",           trend: "4% vs last month",   direction: "up" },
+  { label: "Active Vendors",    value: "14",         icon: "store",           trend: "Currently in review", direction: null },
+  { label: "Pending Responses", value: "3",          icon: "hourglass_empty", trend: "Requires follow-up", direction: null, highlight: true },
 ];
 
 export const PLANS = [
@@ -124,5 +124,36 @@ export const PLANS = [
       "Spa or Golf afternoon options",
       "Est. Cost: $14,850",
     ],
+  },
+];
+
+export const EVENTS = [
+  {
+    id: 1,
+    title: "Q3 Executive Retreat",
+    date: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000), // 30 days from now
+    location: "Mumbai",
+    icon: "business_center",
+  },
+  {
+    id: 2,
+    title: "Summer Gala 2026",
+    date: new Date(Date.now() + 90 * 24 * 60 * 60 * 1000), // 90 days from now
+    location: "Delhi",
+    icon: "celebration",
+  },
+  {
+    id: 3,
+    title: "Team Building Weekend",
+    date: new Date(Date.now() + 14 * 24 * 60 * 60 * 1000), // 14 days from now
+    location: "Goa",
+    icon: "groups",
+  },
+  {
+    id: 4,
+    title: "Wedding Reception",
+    date: new Date(Date.now() + 60 * 24 * 60 * 60 * 1000), // 60 days from now
+    location: "Bangalore",
+    icon: "favorite",
   },
 ];

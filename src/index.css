@@ -17,6 +17,18 @@
   --font-label: 'Manrope', sans-serif;
 }
 
+/* ── Light mode (default) - bone white ── */
+html:not(.dark) {
+  background-color: #f9f6ee;
+  color: #1a1c19;
+}
+
+/* ── Dark mode - soft matte black ── */
+html.dark {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+}
+
 body {
   font-family: var(--font-body);
   margin: 0;
@@ -41,5 +53,24 @@ body {
 /* ── Custom scrollbar ── */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: #c1c9bf; border-radius: 10px; }
-.dark ::-webkit-scrollbar-thumb { background: #3f3f46; }
+::-webkit-scrollbar-thumb { background: #999; border-radius: 10px; }
+.dark ::-webkit-scrollbar-thumb { background: #555; }
+
+/* ── Dark mode semantic colors ── */
+html.dark {
+  --color-background: #1a1a1a;
+  --color-surface: #262626;
+  --color-surface-dim: #1f1f1f;
+  --color-on-surface: #f5f5f5;
+  --color-outline: #666;
+  --color-border: #444;
+}
+
+html:not(.dark) {
+  --color-background: #f9f6ee;
+  --color-surface: #fff;
+  --color-surface-dim: #f0f0f0;
+  --color-on-surface: #1a1c19;
+  --color-outline: #ccc;
+  --color-border: #e0e0e0;
+}

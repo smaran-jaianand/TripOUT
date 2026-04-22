@@ -8,54 +8,33 @@ export default {
   theme: {
     extend: {
       colors: {
-        // ── Exact palette from UI spec HTML files ──
-        "primary":                   "#3b6546",
+        // ── Simplified palette: bone white, soft black, and olive accents ──
+        "primary":                   "#3b6546",  // Olive green (accents only)
         "on-primary":                "#ffffff",
         "primary-container":         "#537e5d",
         "on-primary-container":      "#f6fff4",
-        "primary-fixed":             "#bfeec6",
-        "primary-fixed-dim":         "#a3d2ac",
-        "on-primary-fixed":          "#00210d",
-        "on-primary-fixed-variant":  "#254f32",
-        "secondary":                 "#526254",
-        "on-secondary":              "#ffffff",
-        "secondary-container":       "#d2e5d3",
-        "on-secondary-container":    "#566758",
-        "secondary-fixed":           "#d5e7d5",
-        "secondary-fixed-dim":       "#b9cbba",
-        "on-secondary-fixed":        "#101f14",
-        "on-secondary-fixed-variant":"#3b4b3d",
-        "tertiary":                  "#824c56",
-        "on-tertiary":               "#ffffff",
-        "tertiary-container":        "#9e646e",
-        "on-tertiary-container":     "#fffbff",
-        "tertiary-fixed":            "#ffd9de",
-        "tertiary-fixed-dim":        "#fab4bf",
-        "on-tertiary-fixed":         "#350d17",
-        "on-tertiary-fixed-variant": "#6a3841",
         "error":                     "#ba1a1a",
         "on-error":                  "#ffffff",
         "error-container":           "#ffdad6",
         "on-error-container":        "#93000a",
-        "background":                "#f9f6ee",   // Bone white (day mode)
+        // Light mode: bone white
+        "background":                "#f9f6ee",
         "on-background":             "#1a1c19",
-        "surface":                   "#f9f6ee",   // Bone white
+        "surface":                   "#f9f6ee",
         "on-surface":                "#1a1c19",
-        "surface-variant":           "#e2e3de",
-        "on-surface-variant":        "#414942",
-        "surface-dim":               "#d9dad6",
-        "surface-bright":            "#f9faf5",
-        "surface-container-lowest":  "#fffdfa",
-        "surface-container-low":     "#f4f1e6",
-        "surface-container":         "#efede1",
-        "surface-container-high":    "#e9e7db",
-        "surface-container-highest": "#e4e2d6",
-        "surface-tint":              "#3d6748",
-        "outline":                   "#727971",
-        "outline-variant":           "#c1c9bf",
-        "inverse-surface":           "#2f312e",
-        "inverse-on-surface":        "#f0f1ec",
-        "inverse-primary":           "#a3d2ac",
+        // Dark mode: soft matte black
+        "inverse-surface":           "#1a1a1a",
+        "inverse-on-surface":        "#f5f5f5",
+        
+        // Simplified color aliases (replaces removed surface variants)
+        "surface-container-lowest":  "#ffffff",      // Light: white, Dark: #2a2a2a
+        "surface-container-low":     "#f3f3f3",      // Light: light gray, Dark: #2a2a2a
+        "surface-container":         "#e8e8e8",      // Light: medium gray, Dark: #2a2a2a
+        "surface-container-high":    "#dddddd",      // Light: darker gray, Dark: #333333
+        "surface-variant":           "#efefef",      // Light: lighter gray, Dark: #2f2f2f
+        "on-surface-variant":        "#555555",      // Light: medium gray, Dark: #999999
+        "outline":                   "#cccccc",      // Light: border gray, Dark: #444444
+        "outline-variant":           "#d9d9d9",      // Light: lighter border, Dark: #3f3f3f
       },
       fontFamily: {
         "headline": ["'Public Sans'", "sans-serif"],
